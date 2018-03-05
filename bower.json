@@ -1,9 +1,9 @@
 {
-  "name": "uvalib-breadcrumbs",
-  "description": "breadcrumb navigation component",
-  "main": "uvalib-breadcrumbs.html",
+  "name": "uvalib-google-custom-search",
+  "description": "google custom search wrapped in a component",
+  "main": "uvalib-google-custom-search.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "uvalib-elements": "uvalib-components/uvalib-elements#master"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
@@ -11,6 +11,8 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
   },
   "resolutions": {
-    "polymer": "^2.0.0"
+    "polymer": "^2.5.0",
+    "lodash": "^4.17.5",
+    "webcomponentsjs": "^1.1.0"
   }
 }

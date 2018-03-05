@@ -1,6 +1,6 @@
-# \<uvalib-breadcrumbs\>
+# \<uvalib-google-custom-search\>
 
-breadcrumb navigation component
+google custom search wrapped in a component
 
 ## Install the Polymer-CLI
 

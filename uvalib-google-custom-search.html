@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../uvalib-theme/uvalib-ui-element.html">
+<link rel="import" href="../uvalib-theme/uvalib-theme.html">
+
+<dom-module id="uvalib-google-custom-search">
+  <template>
+    <custom-style>
+      <style include="uvalib-theme">
+        :host {
+          display: block;
+        }
+      </style>
+    </custom-style>
+    <script>
+      (function() {
+        var cx = '013707657808325243262:ec-difi_4ri';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search autosearchonload="true" noresultsstring="no results" queryparametername="q"> </gcse:search>
+  </template>
+
+  <script>
+    /**
+     * `uvalib-google-custom-search`
+     * google custome search wrapped in a component
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UvalibGoogleCustomSearch extends UvalibUiElement {
+      static get is() { return 'uvalib-google-custom-search'; }
+      static get properties() {
+        return {
+        };
+      }
+    }
+
+    window.customElements.define(UvalibGoogleCustomSearch.is, UvalibGoogleCustomSearch);
+  </script>
+</dom-module>
